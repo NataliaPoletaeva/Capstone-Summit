@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/cocogoose?styles=44178" rel="stylesheet">
     <title>EP Global Summit 2021</title>
@@ -17,8 +17,6 @@
 <body>
     <header>
         <ul class="subnav">
-            <li (иконка фейсбук)></li>
-            <li (иконка твиттер)></li>
             <li>Log out</li>
             <li>My page</li>
             <li>English</li>
@@ -29,13 +27,16 @@
                 <div class="change line-2"></div>
                 <div class="change line-3"></div>
             </div>
-            <div class="logo"><a href="index.html"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="86.827px" height="86.827px"
-                        viewBox="0 0 86.827 86.827" style="enable-background:new 0 0 86.827 86.827;"
-                        xml:space="preserve">
-                        <g>
+
+            <div class="logo">
+                <a class="logo-link" href="index.html">
+                    <div class="logo-pic">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px" y="0px" width="86.827px" height="86.827px" viewBox="0 0 86.827 86.827"
+                            xml:space="preserve">
                             <g>
-                                <path d="M38.79,67.684c-0.606-0.653-1.181-1.342-1.739-2.039c-1.164-0.979-2.281-2.006-3.311-3.148
+                                <g>
+                                    <path d="M38.79,67.684c-0.606-0.653-1.181-1.342-1.739-2.039c-1.164-0.979-2.281-2.006-3.311-3.148
                        c0.368,0.044,0.753,0.034,1.125,0.064c-0.837-1.345-1.576-2.755-2.211-4.229c-0.806-0.127-1.619-0.229-2.408-0.407
                        c-2.919-4.518-4.921-9.808-5.698-15.537c1.886,0.723,3.866,1.28,5.895,1.697c0.132-1.225,0.339-2.463,0.643-3.719
                        c-2.407-0.512-4.708-1.265-6.875-2.235c-0.01-0.368-0.034-0.729-0.034-1.097c0-4.327,0.703-8.48,1.99-12.339
@@ -53,7 +54,7 @@
                        c-8.295-3.521-14.76-10.02-17.662-17.993C6.62,37.919,6.609,37.863,6.609,37.793z M8.81,49.409
                        c4.661,5.521,11.115,9.719,18.544,11.827c2.013,2.916,4.37,5.527,7.012,7.755c0.277,0.109,0.561,0.198,0.849,0.287
                        c-0.221,0.123-0.438,0.223-0.659,0.343C22.776,68.088,12.995,60.142,8.81,49.409z" />
-                                <path d="M72.271,6.384c0.596,5.961-28.792,13.86-36.152,30.94c-5.675,13.16,1.729,24.326,9.333,29.706
+                                    <path d="M72.271,6.384c0.596,5.961-28.792,13.86-36.152,30.94c-5.675,13.16,1.729,24.326,9.333,29.706
                        C30.855,88.422,30.264,83.912,29.203,85.182l8.234,1.646c0,0,13.938-23.719,15.355-26.2c-0.055-0.055-3.83-3.415-7-7.344
                        c-0.789-0.996-1.549-2.009-2.19-3.019c-0.639-1.003-1.185-1.978-1.521-2.874c-0.178-0.448-0.34-0.849-0.4-1.239
                        c-0.073-0.38-0.195-0.698-0.171-0.985c-0.003-0.548-0.007-0.859-0.007-0.859s0.039,0.312,0.113,0.849
@@ -84,9 +85,14 @@
                        c-0.13,0.246-0.41,0.452-0.677,0.732c-0.261,0.287-0.616,0.541-1.007,0.818c-0.767,0.567-1.759,1.091-2.84,1.588
                        c-1.085,0.503-2.276,0.938-3.478,1.348c-4.093,1.345-8.918,1.865-10.129,2.07c-1.253,3.18-3.478,6.413-4.47,8.977
                        c9.808,3.525,26.679,4.25,33.493-11.557C91.626,40.996,71.675,0.423,72.271,6.384z" />
+                                </g>
                             </g>
-                        </g>
-                    </svg><span class="logo-name">EP Global<br>Summit 2021</span></a></div>
+                        </svg>
+                    </div>
+                    <div class="logo-name">EP Global<br>Summit 2021</div>
+                </a>
+            </div>
+
             <ul class="nav-items">
                 <li><a href="about.html">About</a></li>
                 <li><a href="#"></a>Program</li>
@@ -98,56 +104,57 @@
     </header>
     <main>
         <section class="event-info">
-            <div class="slogan">Life is fantastic with less plastic</div>
+            <div class="slogan">"Life's fantastic with less plastic"</div>
             <h1>ECOPLANET<br>GLOBAL SUMMIT<br>2021</h1>
             <p class="event-brief-descr">A productive gathering of ecological experts from all around the world with aim
                 to change the situation with plastic pollution. Takes place on November, in France. </p>
             <div class="event-details">
-                <div class="event-date">23.11.2021(TUE) ~ 25.11.2021(THU)</div>
+                <div class="event-date">23(TUE) ~ 25.11.2021(THU)</div>
                 <div class="event-place">@ National Museum of Natural History in Paris, la Cité des Sciences et de
                     l'Industrie and more</div>
             </div>
         </section>
         <section class="event-program">
-            <h2 class="program-head"></h2>
+            <h2 class="program-head">Main Program</h2>
             <ul class="program-elements">
                 <li class="element-card">
-                    <img
-                        src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/ffffff/external-presentation-business-mentoring-inipagistudio-mixed-inipagistudio.png" />
+                    <img src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/ffffff/external-presentation-business-mentoring-inipagistudio-mixed-inipagistudio.png"
+                        alt="lecture" />
                     <span class="element-title">Lecture</span>
                     <p class="element-brief">Listen to speakers from different countries talking about ecological
                         problems and solutions</p>
                 </li>
                 <li class="element-card">
-                    <img
-                        src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/ffffff/external-forum-business-mentoring-inipagistudio-mixed-inipagistudio.png" />
+                    <img src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/ffffff/external-forum-business-mentoring-inipagistudio-mixed-inipagistudio.png"
+                        alt="forum" />
                     <span class="element-title">Forum</span>
                     <p class="element-brief">Discuss all the topics with knowledgeable experts in different fields</p>
                 </li>
                 <li class="element-card">
-                    <img
-                        src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/ffffff/external-training-business-mentoring-inipagistudio-mixed-inipagistudio.png" />
+                    <img src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/ffffff/external-training-business-mentoring-inipagistudio-mixed-inipagistudio.png"
+                        alt="workshop" />
                     <span class="element-title">Workshop</span>
                     <p class="element-brief">Hear out the experts' experience and opinions and share your own</p>
                 </li>
                 <li class="element-card">
-                    <img
-                        src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/ffffff/external-skills-business-mentoring-inipagistudio-mixed-inipagistudio.png" />
+                    <img src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/ffffff/external-skills-business-mentoring-inipagistudio-mixed-inipagistudio.png"
+                        alt="network" />
                     <span class="element-title">Network</span>
                     <p class="element-brief">Enjoy the conversation with other members in a comfortable atmosphere</p>
                 </li>
                 <li class="element-card">
-                    <img
-                        src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/ffffff/external-strategy-business-mentoring-inipagistudio-mixed-inipagistudio.png" />
+                    <img src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/ffffff/external-strategy-business-mentoring-inipagistudio-mixed-inipagistudio.png"
+                        alt="projects" />
                     <span class="element-title">Projects</span>
                     <p class="element-brief">Figure out the new way of solving ecological problems and plan out the
                         events to make it come true</p>
                 </li>
             </ul>
             <button class="join" type="submit">Join EP Global Summit 2021</button>
-            <div class="speakers">
-                <h2 class="speakers-head"></h2>
-            </div>
+            <div class="see-program">SEE THE WHOLE PROGRAM</div>
+        </section>
+        <section class="speakers">
+            <h2 class="speakers-head">Featured Speakers</h2>
         </section>
     </main>
     <footer>
@@ -162,15 +169,17 @@
                         alt="European Union logo"></li>
                 <li><img src="https://secure.greenpeaceusa.org/eoy-takeover/images/greenpeace-logo-green.png"
                         alt="Greenpeace"></li>
-                <li><img src="https://cdnassets.panda.org/_skins/international/img/logo.png" alt="WWF"></li>
+                <li><img src="https://logos-download.com/wp-content/uploads/2016/06/BBC_logo.png" alt="BBC"></li>
                 <li><img src="https://www.fedex.com/content/dam/fedex-com/logos/logo.png" alt="FedEx"></li>
             </ul>
         </div>
         <div class="host">
-            <img class="host-logo"
-                src="https://img.icons8.com/external-tulpahn-outline-color-tulpahn/64/ffffff/external-ecological-ecology-tulpahn-outline-color-tulpahn.png"
-                alt="ECOPLANET">
-            <span class="host-info">EcoPlanet</span>
+            <div class="host-logo">
+                <img src="https://img.icons8.com/external-tulpahn-outline-color-tulpahn/64/ffffff/external-ecological-ecology-tulpahn-outline-color-tulpahn.png"
+                    alt="ECOPLANET">
+                <div class="host-info">EcoPlanet</div>
+            </div>
+            <p class="host-descr">2021 EcoPlanet France. All rights reserved.</p>
         </div>
     </footer>
     <div class="icons-copyright">
