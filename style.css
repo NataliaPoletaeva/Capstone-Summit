@@ -10,6 +10,11 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 ul {
   list-style: none;
 }
@@ -34,6 +39,8 @@ header {
   position: fixed;
   top: 1.5rem;
   left: 1.5rem;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .change {
@@ -47,8 +54,29 @@ header {
   display: none;
 }
 
+.show {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4.5rem;
+  gap: 2rem;
+  background: #ebebeb url('./images/home-background.png') 0 100% no-repeat;
+  background-size: 100%;
+}
+
 .nav-items {
   display: none;
+}
+
+.nav-items > li {
+  font-weight: 700;
+  color: #ec5242;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 2rem;
 }
 
 main {
@@ -184,6 +212,7 @@ h2 {
   margin: 3rem auto;
   padding: 1.5rem 1.25rem;
   text-align: center;
+  cursor: pointer;
 }
 
 .see-program {
@@ -213,7 +242,7 @@ h2 {
 .speaker-card {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 35% 55%;
+  grid-template-columns: 30% 60%;
   gap: 10%;
 }
 
@@ -222,7 +251,7 @@ h2 {
 }
 
 .speaker-card > img {
-  width: 100%;
+  width: 95%;
   background: url('./images/chessboard-dark.png') 0 0 no-repeat;
   object-fit: cover;
   padding-top: 1rem;
@@ -488,11 +517,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-
   header {
     padding-top: 0;
   }
@@ -531,13 +555,13 @@ footer {
     width: 30%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
 
   .logo-link {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
   }
@@ -548,15 +572,28 @@ footer {
   }
 
   .nav-items {
+    width: 70%;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: left;
+    position: static;
+    padding: 0;
+    background: #fff;
+  }
+
+  .nav-items > li:first-of-type {
+    display: none;
   }
 
   .nav-items > li {
+    width: 10%;
+    font-weight: 400;
     font-size: 1rem;
     line-height: 3.75rem;
-    margin: 0 1.75rem;
+    margin: 0 0.75rem;
     color: #5c5c5c;
+    text-align: center;
   }
 
   .event-info {

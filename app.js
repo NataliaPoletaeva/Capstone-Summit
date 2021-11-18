@@ -57,8 +57,7 @@ window.addEventListener('DOMContentLoaded', () => {
                      </div>
                  </li>
                  `;
-        speakerSection.appendChild(speakerCard)
-
+        speakerSection.appendChild(speakerCard);
     });
     const featSpeakers = document.querySelector('.speakers');
     featSpeakers.appendChild(speakerSection);
