@@ -1,3 +1,12 @@
+const speakers = [
+    {
+        image: './images/speaker-1.png',
+        name: 'Catherine Duboix',
+        position: 'Senior Director of l`Eco Inc.',
+        description: ''
+    }
+]
+
 window.addEventListener('DOMContentLoaded', () => {
     const speakerCard = document.createElement('div');
     speakerCard.className = 'speaker-card';
