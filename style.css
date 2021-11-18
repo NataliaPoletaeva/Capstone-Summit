@@ -89,6 +89,7 @@ h1 {
 }
 
 .event-brief-descr {
+  width: 90%;
   font-size: 1rem;
   line-height: 1.75rem;
   color: #5c5c5c;
@@ -200,6 +201,54 @@ h2 {
   margin: 0 auto;
 }
 
+.speaker-section {
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem auto;
+}
+
+.speaker-card {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 35% 55%;
+  gap: 10%;
+}
+
+.speaker-card:nth-of-type(n+3) {
+  display: none;
+}
+
+.speaker-card > img {
+  width: 100%;
+  background: url('./images/chessboard-dark.png') 0 0 no-repeat;
+  object-fit: cover;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  background-size: 50%;
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.speaker-position {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: #ec5242;
+}
+
+.speaker-info {
+  font-size: 0.85rem;
+  line-height: 1rem;
+  margin: 0.5rem auto;
+}
+
 .icons-copyright {
   display: none;
 }
@@ -258,7 +307,7 @@ footer {
 }
 
 .host-descr {
-  width: 70%;
+  width: 55%;
   text-align: left;
   font-size: 0.85rem;
   line-height: 1rem;
@@ -475,7 +524,7 @@ footer {
     display: flex;
     justify-content: space-between;
     box-shadow: 0 0 0.5rem rgba(70, 70, 70, 0.4);
-    padding: 0 4rem;
+    padding: 0 5%;
   }
 
   .logo {
@@ -620,6 +669,37 @@ footer {
     text-decoration: underline;
   }
 
+  .speaker-section {
+    width: 70%;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: auto;
+    gap: 1rem;
+    margin: 2rem auto;
+  }
+
+  .speaker-card > img {
+    background: url('./images/chessboard-light.png') 0 0 no-repeat;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  
+  .speaker-position {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: #ec5242;
+  }
+  
+  .speaker-info {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    margin: 0.5rem auto;
+  }
+
   .partners {
     background-color: #3e3e3e;
     font-family: 'Lato', sans-serif;
@@ -666,6 +746,7 @@ footer {
   .host-descr {
     font-size: 1rem;
     line-height: 1.75rem;
+    padding: 0 5%;
   }
 
   .host-descr.about {
