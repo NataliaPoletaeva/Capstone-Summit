@@ -53,6 +53,7 @@ window.addEventListener('DOMContentLoaded', () => {
                      <div class="speaker-about">
                          <h3 class="speaker-name">${speaker.name}</h3>
                          <div class="speaker-position">${speaker.position}</div>
+                         <div class="line-light"></div>
                          <p class="speaker-info">${speaker.description}</p>
                      </div>
                  </li>
