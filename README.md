@@ -6,7 +6,7 @@
 
 > This is a website for Ecological Summit hosted in France. The site consists of two pages: Home and About. It contains information about the place, date, event program, and other details that might interest the site's visitors. 
 
-![EP Global Summit 2021](./images/Project screenshot.png/)
+![EP Global Summit 2021](./Project screenshot.png/)
 
 This site was built as the Capstone for Module 1 of the Microverse curriculum. Please, enjoy!
 
